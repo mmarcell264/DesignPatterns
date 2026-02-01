@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["behavioral_patterns","creational_patterns","executor", "structural_patterns"]
