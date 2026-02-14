@@ -15,6 +15,7 @@ name = "executor"
 version = "0.1.0"
 dependencies = [
  "creational_patterns",
+ "structural_patterns",
 ]
 
 [[package]]

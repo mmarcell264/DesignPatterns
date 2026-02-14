@@ -4,6 +4,7 @@ use creational_patterns::abstract_factory::main::{static_gui_elements_main, dyna
 use creational_patterns::builder::main::builder_main;
 use creational_patterns::prototpye::prototype_main;
 use creational_patterns::singleton::{main_local_s, main_mutex_s};
+use structural_patterns::adapter::main::adapter_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -18,6 +19,7 @@ fn main() {
         "builder" => builder_main(),
         "prototype" => prototype_main(),
         "singleton" => {main_local_s(); main_mutex_s();},
+        "adapter" => adapter_main(),
         _ => println!("Hello, world!")
     }
 }

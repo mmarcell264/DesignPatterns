@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 creational_patterns = {path = "../creational_patterns"}
+structural_patterns = {path = "../structural_patterns"}
