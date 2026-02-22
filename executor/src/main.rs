@@ -7,6 +7,7 @@ use creational_patterns::singleton::{main_local_s, main_mutex_s};
 use structural_patterns::adapter::main::adapter_main;
 use structural_patterns::bridge::main::bridge_main;
 use structural_patterns::composite::main::composite_main;
+use structural_patterns::decorator::main::decorator_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -24,6 +25,7 @@ fn main() {
         "adapter" => adapter_main(),
         "bridge" => bridge_main(),
         "composite" => composite_main(),
+        "decorator" => decorator_main(),
         _ => println!("Hello, world!")
     }
 }
