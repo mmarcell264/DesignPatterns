@@ -9,6 +9,7 @@ use structural_patterns::bridge::main::bridge_main;
 use structural_patterns::composite::main::composite_main;
 use structural_patterns::decorator::main::decorator_main;
 use structural_patterns::facade::main::facade_main;
+use structural_patterns::flyweight::main::flyweight_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -28,6 +29,7 @@ fn main() {
         "composite" => composite_main(),
         "decorator" => decorator_main(),
         "facade" => facade_main().expect("Error in facade"),
+        "flyweight" => flyweight_main(),
         _ => println!("Hello, world!")
     }
 }
