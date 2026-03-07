@@ -88,6 +88,7 @@ dependencies = [
 name = "executor"
 version = "0.1.0"
 dependencies = [
+ "behavioral_patterns",
  "creational_patterns",
  "structural_patterns",
 ]
