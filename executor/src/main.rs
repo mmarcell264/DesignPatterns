@@ -15,6 +15,7 @@ use behavioral_patterns::CoR::main::CoR_main;
 use behavioral_patterns::command::main::command_main;
 use behavioral_patterns::iterator::standard_iterator::st_iterator_main;
 use behavioral_patterns::iterator::custom_iterator::ct_iterator_main;
+use behavioral_patterns::mediator::main::mediator_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -39,6 +40,7 @@ fn main() {
         "CoR" => CoR_main(),
         "command" => command_main(),
         "iterator" => {st_iterator_main(); ct_iterator_main();},
+        "mediator" => mediator_main(),
         _ => println!("Hello, world!")
     }
 }
