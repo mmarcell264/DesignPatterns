@@ -13,6 +13,8 @@ use structural_patterns::flyweight::main::flyweight_main;
 use structural_patterns::proxy::main::proxy_main;
 use behavioral_patterns::CoR::main::CoR_main;
 use behavioral_patterns::command::main::command_main;
+use behavioral_patterns::iterator::standard_iterator::st_iterator_main;
+use behavioral_patterns::iterator::custom_iterator::ct_iterator_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -36,6 +38,7 @@ fn main() {
         "proxy" => proxy_main(),
         "CoR" => CoR_main(),
         "command" => command_main(),
+        "iterator" => {st_iterator_main(); ct_iterator_main();},
         _ => println!("Hello, world!")
     }
 }
