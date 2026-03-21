@@ -17,6 +17,7 @@ use behavioral_patterns::iterator::standard_iterator::st_iterator_main;
 use behavioral_patterns::iterator::custom_iterator::ct_iterator_main;
 use behavioral_patterns::mediator::main::mediator_main;
 use behavioral_patterns::memento::{conceptual::memonto_conceptual_main, serde::memento_serde_main};
+use behavioral_patterns::observer::main::observer_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -43,6 +44,7 @@ fn main() {
         "iterator" => {st_iterator_main(); ct_iterator_main();},
         "mediator" => mediator_main(),
         "memento" => {memonto_conceptual_main(); memento_serde_main();},
+        "observer" => observer_main(),
         _ => println!("Hello, world!")
     }
 }
