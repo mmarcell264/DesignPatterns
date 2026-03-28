@@ -19,6 +19,7 @@ use behavioral_patterns::mediator::main::mediator_main;
 use behavioral_patterns::memento::{conceptual::memonto_conceptual_main, serde::memento_serde_main};
 use behavioral_patterns::observer::main::observer_main;
 use behavioral_patterns::state::main::state_main;
+use behavioral_patterns::strategy::{conceptual::conceptual_strategy_main, functional::functional_strategy_main};
 use std::io::{self, Write};
 
 fn main() {
@@ -47,6 +48,7 @@ fn main() {
         "memento" => {memonto_conceptual_main(); memento_serde_main();},
         "observer" => observer_main(),
         "state" => state_main(),
+        "strategy" => {conceptual_strategy_main(); functional_strategy_main();},
         _ => println!("Hello, world!"),
     }
 }
