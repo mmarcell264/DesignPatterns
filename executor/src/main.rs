@@ -20,6 +20,7 @@ use behavioral_patterns::memento::{conceptual::memonto_conceptual_main, serde::m
 use behavioral_patterns::observer::main::observer_main;
 use behavioral_patterns::state::main::state_main;
 use behavioral_patterns::strategy::{conceptual::conceptual_strategy_main, functional::functional_strategy_main};
+use behavioral_patterns::template::template_main;
 use std::io::{self, Write};
 
 fn main() {
@@ -49,6 +50,7 @@ fn main() {
         "observer" => observer_main(),
         "state" => state_main(),
         "strategy" => {conceptual_strategy_main(); functional_strategy_main();},
+        "template" => template_main(),
         _ => println!("Hello, world!"),
     }
 }
